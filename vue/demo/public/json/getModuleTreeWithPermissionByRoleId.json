@@ -1,0 +1,41 @@
+{
+  "code": 0,
+  "success": true,
+  "message": null,
+  "result": [
+    {
+      "id": "cff1ed94-d859-11e9-9092-fa163e6c79ee",
+      "appSysId": "0d3cf02e6bda59431721a979a5209e28",
+      "parentId": "2b716432-d2cb-11e9-9092-fa163e6c79ef",
+      "level": 3,
+      "modCode": "",
+      "modName": "合同",
+      "modUri": null,
+      "jsComp": null,
+      "jsCompName": null,
+      "pathCode": "zuwuxitong_yunyingguanli_jichuziliaoguanli_hetong",
+      "pathName": "租务系统_运营管理_基础资料管理_合同",
+      "redirect": null,
+      "modType": 2,
+      "sortNo": null,
+      "isLeaf": 1,
+      "routeHidden": 0,
+      "description": null,
+      "icon": null,
+      "isRoute": 0,
+      "status": 1,
+      "createTime": "2019-09-16 16:13:21",
+      "createBy": "",
+      "updateTime": "2019-09-16 16:13:21",
+      "updateBy": "",
+      "delFlag": 0,
+      "appSysModuleOpMappingList": null,
+      "funcPermMenuMapList": null,
+      "appSysModuleList": null,
+      "appSysModuleDtoList": null,
+      "allLeafModuleList": null,
+      "moduleId": null
+    }
+  ],
+  "timestamp": 1569581010065
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var res = [
+        {
+          frtId: "1",
+          frtName: "科学城项目",
+          frtCode: null,
+          frpType: "1414708",
+          frpName: "01计税表",
+          reportNnum: "3"
+        },
+        {
+          frtId: "1",
+          frtName: "科学城项目",
+          frtCode: null,
+          frpType: "1414709",
+          frpName: "02管理",
+          reportNnum: "3"
+        },
+        {
+          frtId: "1",
+          frtName: "科学城项目",
+          frtCode: null,
+          frpType: "1414710",
+          frpName: "03安永",
+          reportNnum: "2"
+        },
+        {
+          frtId: "1",
+          frtName: "科学城项目",
+          frtCode: null,
+          frpType: "1414711",
+          frpName: "04报税截图",
+          reportNnum: "3"
+        },
+        {
+          frtId: "1",
+          frtName: "科学城项目",
+          frtCode: null,
+          frpType: "1414712",
+          frpName: "05其他税务文件",
+          reportNnum: "1"
+        },
+        {
+          frtId: "2",
+          frtName: "奥体项目",
+          frtCode: null,
+          frpType: "1414708",
+          frpName: "01计税表",
+          reportNnum: "3"
+        },
+        {
+          frtId: "2",
+          frtName: "奥体项目",
+          frtCode: null,
+          frpType: "1414709",
+          frpName: "02管理",
+          reportNnum: "3"
+        },
+        {
+          frtId: "2",
+          frtName: "奥体项目",
+          frtCode: null,
+          frpType: "1414710",
+          frpName: "03安永",
+          reportNnum: "2"
+        },
+        {
+          frtId: "2",
+          frtName: "奥体项目",
+          frtCode: null,
+          frpType: "1414711",
+          frpName: "04报税截图",
+          reportNnum: "3"
+        },
+        {
+          frtId: "2",
+          frtName: "奥体项目",
+          frtCode: null,
+          frpType: "1414712",
+          frpName: "05其他税务文件",
+          reportNnum: "1"
+        }
+      ];
+      let tmpObj = {};
+      res.map(function(subArr) {
+        var o = tmpObj[subArr["frtName"]];
+        if (!o) {
+          o = {};
+          o.dataset = [];
+          o.time = subArr["frtName"];
+          o.dataset.push(subArr);
+          tmpObj[subArr["frtName"]] = o;
+        } else {
+          o.dataset.push(subArr);
+        }
+        return  o
+      });
+      console.log('tmpObj',tmpObj)
+      //   res.map(item=>{
+      //       var o = obj[item["frpName"]]
+      //       if(!o){
+      //         let o = []
+      //         o.push(item)
+      //       }
+      //     console.log('item',item)
+      //   })
+    </script>
+  </body>
+</html>

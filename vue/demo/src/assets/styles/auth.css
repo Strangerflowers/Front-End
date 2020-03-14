@@ -1,0 +1,269 @@
+/* 用户授权中心样式覆盖 */
+/* input框 */
+.auth-form-control {
+  display:inline-block;
+  height: calc(1.5em + .75rem + 2px);
+  padding: .375rem .75rem;
+  font-size: .875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #5c6873;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #e4e7ea;
+  border-radius: .25rem;
+  -webkit-transition: border-color 0.15s ease-in-out,-webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out,-webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out,-webkit-box-shadow 0.15s ease-in-out;
+}
+#roles .el-dialog {
+  position: fixed;
+  right: 0px;
+  height: 100vh;
+  margin: 0 !important;
+  background: #FFF;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.3);
+  box-shadow: 0 1px 3px rgba(0,0,0,.3);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 50%;
+}
+.el-dialog__header{
+  border-bottom:1px solid #eee;
+}
+#roles  .el-dialog__body {
+  padding: 30px 20px;
+  color: #606266;
+  font-size: 14px;
+  word-break: break-all;
+  overflow: auto;
+  height: 600px;
+  /* margin-bottom: 100px; */
+}
+#roles .el-dialog__footer {
+  padding: 10px 20px 20px;
+  text-align: right;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  border-top: 1px solid #eee;
+  width: 100%;
+}
+
+
+/* .el-input .el-input--small .el-input--suffix .el-input__suffix .el-input__suffix-inner .el-select__caret .el-input__icon .l-icon-arrow-up .el-icon-arrow-up:before {
+  content: "\E60B";
+} */
+
+.el-input  .el-input__inner .el-input__suffix .el-input__suffix-inner .el-select__caret.el-input__icon.el-icon-arrow-up ::before {
+  content: "\E60B";
+  color:#f00;
+}
+.tab-content {
+  margin-top: -1px;
+  background: #fff;
+  border: 0px solid #c8ced3;
+  border-radius: 0 0 .25rem .25rem;
+}
+/* 输入框的错误样式 */
+.must {
+  color: #f00;
+}
+
+/* 修改下拉样式 */
+.multiselect__tags-wrap .multiselect__tag {
+  position: relative;
+  display: inline-block;
+  padding: 4px 26px 4px 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+  color: #333;
+  line-height: 1;
+  background: #fff;
+  margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 100%;
+  text-overflow: ellipsis;
+}
+.multiselect__tags{
+  width:314px;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+
+.clearIcon{
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  color: #ccc;
+  z-index:100;
+  cursor:pointer ;
+}
+.modal-footer {
+  position: absolute;
+  bottom: 4px;
+  left: 34%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding: 10px;
+  border-top: 0px solid #c8ced3;
+  border-bottom-right-radius: .3rem;
+  border-bottom-left-radius: .3rem;
+}
+.modal-body {
+  position: relative;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.border-3r{
+  border-radius:3px !important;
+}
+.system-select-width{
+  width:250px !important;
+}
+.modal-header {
+  background:#C8CED3 ;
+}
+.modal-footer .btn{
+  width:68px;
+}
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+  color: #007bff;
+  background-color: #fff;
+  border-color: #c8ced3 #c8ced3 #fff;
+}
+#logoutStyle___BV_modal_footer_{
+  position: absolute;
+    bottom: 4px;
+    left: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding: 10px;
+    border-top: 0px solid #c8ced3;
+    border-bottom-right-radius: .3rem;
+    border-bottom-left-radius: .3rem;
+}
+/** 文本输入框的 X  **/
+input::-ms-clear{display: none;}
+/** 密码输入框的 X  **/
+input::-ms-reveal{display: none;}
+
+.el-cascader-panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 4px;
+  font-size: 14px;
+  height: 300px;
+  overflow: hidden;
+}
+/* 弹框高度 */
+.modal-body {
+  position: relative;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+  height: 550px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.modal-content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: .3rem;
+  outline: 0;
+}
+.el-tree--highlight-current .el-tree-node.is-current>.el-tree-node__content {
+  background: #ddd;
+}
+#logoutStyle .modal-body {
+  position: relative;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+  height: 100px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.checkboxClass  .custom-control-inline {
+  /* display: -webkit-inline-box; */
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-right: 1rem;
+  display: inline-block;
+}
+#resourceAppIdListGroup>div{
+  width:100%;
+}
+.el-input--small .el-input__icon {
+  line-height: 20px;
+}
+#confirmClass .modal-body {
+  position: relative;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+  height: 100px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.el-table__fixed-right{
+  width:0px;
+  height:0px;
+}
+#resumeClass .modal-body {
+  position: relative;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 0px;
+  text-align: center;
+  margin-bottom: 30px;
+  height: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+}
